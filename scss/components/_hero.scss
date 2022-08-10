@@ -1,0 +1,118 @@
+.hero {
+  position: relative;
+  padding-bottom: 42px;
+  min-height: 760px;
+}
+
+.hero__container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hero__info-text {
+  position: relative;
+  display: inline-block;
+  padding: 5px 30px;
+  margin-bottom: 24px;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 10px;
+  line-height: 1.25;
+  color: #293b2b;
+  background: #ffffff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+  border-radius: 0px 0px 13.32px 13.32px;
+  z-index: 2;
+  
+  @media screen and (min-width: 1024px) {
+    max-width: 215px;
+    margin: 0 0 0 auto;
+    padding: 14px 22px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.hero__info-text-big {
+  font-size: 12px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+
+.hero__title {
+  position: relative;
+  margin: 0 auto 24px;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+  max-width: 221px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+
+  @media screen and (min-width: 1024px) {
+    margin: 0 0 61px 0;
+    font-size: 43px;
+    line-height: 1.2;
+    max-width: 400px;
+  }
+}
+
+.hero__title-right {
+  text-align: end;
+}
+
+.hero__title-big {
+  font-size: 31px;
+  line-height: 1.2;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 56.6243px;
+    line-height: 69px;
+  }
+}
+
+.hero__subtitle-text {
+  max-width: 230px;
+  margin: 167px auto 15px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.2;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+
+  @media screen and (min-width: 1024px) {
+    margin: 0;
+    max-width: 386px;
+    text-align: start;
+    font-size: 32px;
+    margin-bottom: 29px;
+  }
+
+  @media screen and( min-width: 1024px) {
+    margin-top: 313px;
+  }
+}
+
+.hero__btn-registration {
+  font-size: 22px;
+  line-height: 1.48;
+  padding: 8px 74px;
+  width: fit-content;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 36px;
+    padding: 13px 120px;
+  }
+}

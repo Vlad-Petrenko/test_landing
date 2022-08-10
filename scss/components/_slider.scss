@@ -1,0 +1,102 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-pagination {
+  margin-bottom: 25px;
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.swiper__text-box {
+  @media screen and (min-width: 1024px) {
+    text-align: start;
+  }
+}
+
+.swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 0.8;
+  width: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background: linear-gradient(102.12deg, #63d737 7.53%, #058048 98.25%);
+}
+
+.swiper__bg {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center, center, 50% 80%, center;
+  @media screen and( min-width: 1024px) {
+    background-position: center, center, 60% 50%, center;
+  }
+}
+
+.swiper__bg-fans {
+  background-image: linear-gradient(
+      0deg,
+      rgba(41, 59, 43, 0.35),
+      rgba(41, 59, 43, 0.35)
+    ),
+    radial-gradient(
+      49.2% 38.83% at 50% 55.08%,
+      rgba(41, 59, 43, 0) 23.4%,
+      #293b2b 100%
+    ),
+    url(../img/soccer_fans-mobile.png), url(../img/football_stadium.jpg);
+  @media screen and( min-width: 1024px) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(41, 59, 43, 0.35),
+        rgba(41, 59, 43, 0.35)
+      ),
+      radial-gradient(
+        58.29% 46% at 50% 54%,
+        rgba(41, 59, 43, 0) 50.26%,
+        #293b2b 100%
+      ),
+      url(../img/soccer_fans.png), url(../img/football_stadium.jpg);
+  }
+}
+
+.swiper__bg-girl {
+  background-image: linear-gradient(
+      0deg,
+      rgba(41, 59, 43, 0.35),
+      rgba(41, 59, 43, 0.35)
+    ),
+    radial-gradient(
+      49.2% 38.83% at 50% 55.08%,
+      rgba(41, 59, 43, 0) 23.4%,
+      #293b2b 100%
+    ),
+    url(../img/girl-mobile.png), url(../img/benjamin-mobile.png);
+  @media screen and( min-width: 1024px) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(41, 59, 43, 0.35),
+        rgba(41, 59, 43, 0.35)
+      ),
+      radial-gradient(
+        58.29% 46% at 50% 54%,
+        rgba(41, 59, 43, 0) 50.26%,
+        #293b2b 100%
+      ),
+      url(../img/girl.png), url(../img/benjamin.jpg);
+  }
+}

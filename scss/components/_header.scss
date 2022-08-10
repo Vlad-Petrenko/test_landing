@@ -1,0 +1,29 @@
+.header {
+  background: linear-gradient(0deg, rgba(22, 26, 22, 0) -37.5%, #161a16 68%);
+}
+
+.header__icon-logo {
+  @media screen and (max-width: 1023px) {
+    width: 70px;
+    height: 18px;
+  }
+}
+
+.header__access {
+  visibility: hidden;
+  font-size: 16px;
+  line-height: 1.18;
+  text-decoration-line: underline;
+  margin-left: auto;
+  margin-right: 19px;
+  @media screen and (min-width: 1024px) {
+    visibility: visible;
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 20px;
+}

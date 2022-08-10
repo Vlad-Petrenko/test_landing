@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <svg class="icon-logo header__icon-logo" width="70" height="18">
+          <use href="./img/icons.svg#icon-Logo"></use>
+        </svg>
+        <p class="header__access">Acceder</p>
+        <button class="btn-registration" type="button">Regístrate</button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <p class="hero__info-text">
+            Deposito minimo <span class="hero__info-text-big">500 MXN</span>
+          </p>
+          <h1 class="hero__title">
+            Bono de primer<br /><span class="hero__title-right"
+              >depósito hasta</span
+            >
+            <span class="hero__title-big">40 000 MXN</span>
+          </h1>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-fans">
+              <div class="swiper__bg swiper__bg-fans">
+                <div class="swiper__text-box container">
+                  <p class="hero__subtitle-text">
+                    COMBOBOOST hasta el 100% en apuestas combinadas
+                  </p>
+                  <button
+                    class="btn-registration hero__btn-registration"
+                    type="button"
+                  >
+                    Regístrate<span class="flare"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper__bg swiper__bg-girl">
+                <div class="swiper__text-box container">
+                  <p class="hero__subtitle-text">
+                    Reembolso del 500% en apuestas deportivas
+                  </p>
+                  <button
+                    class="btn-registration hero__btn-registration"
+                    type="button"
+                  >
+                    Regístrate<span class="flare"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <form class="form-email" name="email-form">
+          <label>
+            <input
+              class="form-email__input"
+              type="email"
+              name="email"
+              placeholder="Correo electronico"
+            />
+          </label>
+          <button class="form-email__btn" type="submit">Suscríbete</button>
+        </form>
+        <ul class="footer__list">
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-VISA"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-MASTERCARD"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-AMEX"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-ASTROPAY"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-SKRILL"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-PAYSAFE"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-ECOPAYZ"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-BITCOIN"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-LITECOIN"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-ETHEREUM"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-RIPPLE"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-TETHER"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-CARDANO"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-BINANCE"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icon-payment">
+              <use href="./img/icons.svg#icon-USDC"></use>
+            </svg>
+          </li>
+        </ul>
+        <svg class="icon-logo footer__icon-logo">
+          <use href="./img/icons.svg#icon-Logo"></use>
+        </svg>
+      </div>
+    </footer>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
