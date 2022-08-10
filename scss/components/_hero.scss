@@ -9,7 +9,7 @@
   height: 100%;
   text-align: center;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     display: flex;
     flex-direction: column;
   }
@@ -30,7 +30,7 @@
   border-radius: 0px 0px 13.32px 13.32px;
   z-index: 2;
   
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     max-width: 215px;
     margin: 0 0 0 auto;
     padding: 14px 22px;
@@ -42,7 +42,7 @@
 .hero__info-text-big {
   font-size: 12px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     font-size: 28px;
     line-height: 1.2;
   }
@@ -62,7 +62,7 @@
   flex-direction: column;
   z-index: 2;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     margin: 0 0 61px 0;
     font-size: 43px;
     line-height: 1.2;
@@ -78,8 +78,8 @@
   font-size: 31px;
   line-height: 1.2;
 
-  @media screen and (min-width: 1024px) {
-    font-size: 56.6243px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 56px;
     line-height: 69px;
   }
 }
@@ -92,7 +92,7 @@
   line-height: 1.2;
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     margin: 0;
     max-width: 386px;
     text-align: start;
@@ -100,7 +100,7 @@
     margin-bottom: 29px;
   }
 
-  @media screen and( min-width: 1024px) {
+  @media screen and( min-width: $breakpoint-desktop) {
     margin-top: 313px;
   }
 }
@@ -111,7 +111,7 @@
   padding: 8px 74px;
   width: fit-content;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     font-size: 36px;
     padding: 13px 120px;
   }

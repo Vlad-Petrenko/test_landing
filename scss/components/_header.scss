@@ -1,5 +1,5 @@
 .header {
-  background: linear-gradient(0deg, rgba(22, 26, 22, 0) -37.5%, #161a16 68%);
+  background: $header-background__linear-gradient;
 }
 
 .header__icon-logo {
@@ -16,7 +16,8 @@
   text-decoration-line: underline;
   margin-left: auto;
   margin-right: 19px;
-  @media screen and (min-width: 1024px) {
+
+  @media screen and (min-width: $breakpoint-desktop) {
     visibility: visible;
   }
 }

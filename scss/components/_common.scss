@@ -1,8 +1,8 @@
 body {
   font-family: "inter";
-  color: #ffffff;
+  color: $primary-text-color;
   font-weight: 600;
-  background: #293b2b;
+  background: $primary-backgound;
 }
 
 p {
@@ -25,7 +25,7 @@ ul {
   padding: 0 10px;
   max-width: 340px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     max-width: 1220px;
     padding: 0 20px;
   }
@@ -39,7 +39,7 @@ ul {
 .btn-registration {
   color: inherit;
   padding: 4px 16px;
-  background: linear-gradient(102.12deg, #63d737 7.53%, #058048 98.25%);
+  background: $accent-gradient;
   border: none;
   font-size: 10px;
   line-height: 1.25;
@@ -47,18 +47,19 @@ ul {
   box-shadow: 0px 5px 13px -14px rgba(41, 59, 43, 0.5);
   position: relative;
   overflow-x: hidden;
+  transition-duration: 300ms;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     padding: 6px 25px;
     font-size: 16px;
     line-height: 1.18;
   }
 
-  :hover {
-    filter: blur(1.1px);
-    scale: 1.1;
-    transform: translateY(5px);
-    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  &:hover {
+    filter: blur(0.5px);
+    transform: scale(1.05);
+    transform: translateY(2px);
+    box-shadow: 0px 10px 20px 2px rgba(3, 228, 14, 0.582);
   }
 
   .flare {

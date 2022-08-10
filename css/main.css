@@ -163,6 +163,8 @@ ul {
           box-shadow: 0px 5px 13px -14px rgba(41, 59, 43, 0.5);
   position: relative;
   overflow-x: hidden;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 @media screen and (min-width: 1024px) {
   .btn-registration {
@@ -171,14 +173,15 @@ ul {
     line-height: 1.18;
   }
 }
-.btn-registration :hover {
-  -webkit-filter: blur(1.1px);
-          filter: blur(1.1px);
-  scale: 1.1;
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
-  -webkit-box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+.btn-registration:hover {
+  -webkit-filter: blur(0.5px);
+          filter: blur(0.5px);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: 0px 10px 20px 2px rgba(3, 228, 14, 0.582);
+          box-shadow: 0px 10px 20px 2px rgba(3, 228, 14, 0.582);
 }
 .btn-registration .flare {
   position: absolute;
@@ -349,7 +352,7 @@ ul {
 }
 @media screen and (min-width: 1024px) {
   .hero__title-big {
-    font-size: 56.6243px;
+    font-size: 56px;
     line-height: 69px;
   }
 }
@@ -389,6 +392,88 @@ ul {
   .hero__btn-registration {
     font-size: 36px;
     padding: 13px 120px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-pagination {
+  margin-bottom: 25px;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .swiper-pagination {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper__text-box {
+    text-align: start;
+  }
+}
+
+.swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 0.8;
+  width: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background: linear-gradient(102.12deg, #63d737 7.53%, #058048 98.25%);
+}
+
+.swiper__bg {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center, center, 50% 80%, center;
+}
+@media screen and (min-width: 1024px) {
+  .swiper__bg {
+    background-position: center, center, 60% 50%, center;
+  }
+}
+
+.swiper__bg-fans {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(41, 59, 43, 0.35)), to(rgba(41, 59, 43, 0.35))), radial-gradient(49.2% 38.83% at 50% 55.08%, rgba(41, 59, 43, 0) 23.4%, #293b2b 100%), url(../img/soccer_fans-mobile.png), url(../img/football_stadium.jpg);
+  background-image: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(49.2% 38.83% at 50% 55.08%, rgba(41, 59, 43, 0) 23.4%, #293b2b 100%), url(../img/soccer_fans-mobile.png), url(../img/football_stadium.jpg);
+}
+@media screen and (min-width: 1024px) {
+  .swiper__bg-fans {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(41, 59, 43, 0.35)), to(rgba(41, 59, 43, 0.35))), radial-gradient(58.29% 46% at 50% 54%, rgba(41, 59, 43, 0) 50.26%, #293b2b 100%), url(../img/soccer_fans.png), url(../img/football_stadium.jpg);
+    background-image: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(58.29% 46% at 50% 54%, rgba(41, 59, 43, 0) 50.26%, #293b2b 100%), url(../img/soccer_fans.png), url(../img/football_stadium.jpg);
+  }
+}
+
+.swiper__bg-girl {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(41, 59, 43, 0.35)), to(rgba(41, 59, 43, 0.35))), radial-gradient(49.2% 38.83% at 50% 55.08%, rgba(41, 59, 43, 0) 23.4%, #293b2b 100%), url(../img/girl-mobile.png), url(../img/benjamin-mobile.png);
+  background-image: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(49.2% 38.83% at 50% 55.08%, rgba(41, 59, 43, 0) 23.4%, #293b2b 100%), url(../img/girl-mobile.png), url(../img/benjamin-mobile.png);
+}
+@media screen and (min-width: 1024px) {
+  .swiper__bg-girl {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(41, 59, 43, 0.35)), to(rgba(41, 59, 43, 0.35))), radial-gradient(58.29% 46% at 50% 54%, rgba(41, 59, 43, 0) 50.26%, #293b2b 100%), url(../img/girl.png), url(../img/benjamin.jpg);
+    background-image: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(58.29% 46% at 50% 54%, rgba(41, 59, 43, 0) 50.26%, #293b2b 100%), url(../img/girl.png), url(../img/benjamin.jpg);
   }
 }
 
@@ -531,15 +616,25 @@ ul {
 
 @media screen and (min-width: 1024px) {
   .footer__list li:nth-child(-n+8) {
-    max-width: 55px;
+    max-width: 53px;
     max-height: 50px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .footer__list li:nth-child(-n+8) {
+    max-width: 72px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .footer__list li:nth-last-child(-n+7) {
-    max-width: 73px;
+    max-width: 72px;
     max-height: 70px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .footer__list li:nth-last-child(-n+7) {
+    max-width: 76px;
   }
 }
 
@@ -556,87 +651,5 @@ ul {
   .footer__icon-logo {
     position: absolute;
     top: 10px;
-  }
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.swiper-slide {
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.swiper-pagination {
-  margin-bottom: 25px;
-  display: none;
-}
-@media screen and (min-width: 1024px) {
-  .swiper-pagination {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .swiper__text-box {
-    text-align: start;
-  }
-}
-
-.swiper-pagination-bullet {
-  background: #ffffff;
-  opacity: 0.8;
-  width: 10px;
-}
-
-.swiper-pagination-bullet-active {
-  background: linear-gradient(102.12deg, #63d737 7.53%, #058048 98.25%);
-}
-
-.swiper__bg {
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center, center, 50% 80%, center;
-}
-@media screen and (min-width: 1024px) {
-  .swiper__bg {
-    background-position: center, center, 60% 50%, center;
-  }
-}
-
-.swiper__bg-fans {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(41, 59, 43, 0.35)), to(rgba(41, 59, 43, 0.35))), radial-gradient(49.2% 38.83% at 50% 55.08%, rgba(41, 59, 43, 0) 23.4%, #293b2b 100%), url(../img/soccer_fans-mobile.png), url(../img/football_stadium.jpg);
-  background-image: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(49.2% 38.83% at 50% 55.08%, rgba(41, 59, 43, 0) 23.4%, #293b2b 100%), url(../img/soccer_fans-mobile.png), url(../img/football_stadium.jpg);
-}
-@media screen and (min-width: 1024px) {
-  .swiper__bg-fans {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(41, 59, 43, 0.35)), to(rgba(41, 59, 43, 0.35))), radial-gradient(58.29% 46% at 50% 54%, rgba(41, 59, 43, 0) 50.26%, #293b2b 100%), url(../img/soccer_fans.png), url(../img/football_stadium.jpg);
-    background-image: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(58.29% 46% at 50% 54%, rgba(41, 59, 43, 0) 50.26%, #293b2b 100%), url(../img/soccer_fans.png), url(../img/football_stadium.jpg);
-  }
-}
-
-.swiper__bg-girl {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(41, 59, 43, 0.35)), to(rgba(41, 59, 43, 0.35))), radial-gradient(49.2% 38.83% at 50% 55.08%, rgba(41, 59, 43, 0) 23.4%, #293b2b 100%), url(../img/girl-mobile.png), url(../img/benjamin-mobile.png);
-  background-image: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(49.2% 38.83% at 50% 55.08%, rgba(41, 59, 43, 0) 23.4%, #293b2b 100%), url(../img/girl-mobile.png), url(../img/benjamin-mobile.png);
-}
-@media screen and (min-width: 1024px) {
-  .swiper__bg-girl {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(41, 59, 43, 0.35)), to(rgba(41, 59, 43, 0.35))), radial-gradient(58.29% 46% at 50% 54%, rgba(41, 59, 43, 0) 50.26%, #293b2b 100%), url(../img/girl.png), url(../img/benjamin.jpg);
-    background-image: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(58.29% 46% at 50% 54%, rgba(41, 59, 43, 0) 50.26%, #293b2b 100%), url(../img/girl.png), url(../img/benjamin.jpg);
   }
 }/*# sourceMappingURL=main.css.map */
